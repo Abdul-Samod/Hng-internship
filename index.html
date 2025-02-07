@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- card starts here -->
+     <section class="card-container">
+        <div id="profile-pic">
+            <img src="My Picture.jpg" alt="profile-picture" id="profilePicture">
+        </div>
+        <div id="profile-info">
+            <h2 id="fullName">Abdulsamod Olaoye</h2>
+            <h3 id="jobTitle">Front-End Developer</h3>
+            <p id="shortBio">A Front-End Web Developer. Familiar with HTML, CSS and JavaScript, <br>i specialize in Front-end 
+                development and i am passionate about creating beautiful and responsive. <br> I am also a student of Miva Open University, where i study Software Engineering. <br> 
+                Dedicated to constant learning and improvement, i like to keep up with the latest technologies <br>and trends in the web development world with constant practice.
+            </p>
+            <p id="currentLocation"><i class="fa-solid fa-location-dot"></i>Ogun, Nigeria</p>
+            <p id="emailAddress"><i class="fa-solid fa-envelope"></i>samodolaoye@gmail.com</p>
+            <ul class="socialLinks">
+                <li>
+                    <a href="https://www.linkedin.com/in/olaoye-abdulsamod-4ab4181b9?utm_source=share&utm_
+                    campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://x.com/AbdulSamod_22?t=OcrFcx6y_wSNqsoPC3QPGA&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://github.com/Abdul-Samod" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/olaoye.samod?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p id="currentTimeUTC"></p>
+            <script src="https://kit.fontawesome.com/525246c0f1.js" crossorigin="anonymous"></script>
+            <script>
+                function updateDateTime() {
+                    const now = new Date();
+
+                document.getElementById("currentTimeUTC").innerHTML = now.toLocaleString();    
+                }
+
+                setInterval(updateDateTime, 1000);
+                updateDateTime();
+            </script>
+            
+
+        </div>
+     </section>
+     <!-- card ends here -->
+</body>
+</html>
